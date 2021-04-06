@@ -1,0 +1,12 @@
+.bl {
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.b--gold {
+    border-color: #ffb700;
+}
+
+.bw1 {
+    border-width: .125rem;
+}

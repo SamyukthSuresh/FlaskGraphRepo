@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="bg-white black-80 tc pv4 avenir">
+        <a href="" class="bg-black-80 ba b--black dib pa3 w2 h2 br-100">
+            <svg class="white" data-icon="skull" viewBox="0 0 32 32" style="fill:currentcolor">
+                <title>skull icon</title>
+                <path
+                    d="M16 0 C6 0 2 4 2 14 L2 22 L6 24 L6 30 L26 30 L26 24 L30 22 L30 14 C30 4 26 0 16 0 M9 12 A4.5 4.5 0 0 1 9 21 A4.5 4.5 0 0 1 9 12 M23 12 A4.5 4.5 0 0 1 23 21 A4.5 4.5 0 0 1 23 12">
+                </path>
+            </svg>
+        </a>
+        <h1 class="mt2 mb0 baskerville i fw1 f1">Grafity</h1>
+        <h2 class="mt2 mb0 f6 fw4 ttu tracked">Get your Graph basics on Point</h2>
+        <nav class="bt bb tc mw7 center mt4">
+            <a class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="/"
+                method="GET">Intro</a>
+            <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" href='/rep'
+                method="GET">Representations</a>
+            <a class="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pa3 ph4-l" href="/algo"
+                method="GET">Algorithms</a>
+            <a class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l" href="/animation"
+                method="GET">Animation</a>
+        </nav>
+    </header>
+    <article>
+        <header class="bg-gold sans-serif">
+            <div class="mw9 center pa4 pt5-ns ph7-l">
+                <time class="f6 mb2 dib ttu tracked"><small>April 2020</small></time>
+                <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+                    <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+                        Representations of Graph
+                    </span>
+                </h3>
+                <h5 class="f6 ttu tracked black-80">By DRSS</h5>
+            </div>
+        </header>
+        <div class="pa4 ph7-l georgia mw9-l center">
+            <p class="f5 f3-ns lh-copy measure georgia">
+                The following two are the most commonly used representations of a graph.
+                1. Adjacency Matrix
+                2. Adjacency List
+                There are other representations also like, Incidence Matrix and Incidence List. The choice of graph
+                representation is situation-specific. It totally depends on the type of operations to be performed and
+                ease of use.
+            </p>
+            <img align="center" class="f5 f3-ns lh-copy measure georgia"
+                src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/undirectedgraph.png"
+                alt="Graph picture">
+            <h1>Adjacency List</h1>
+            <p class="f5 f3-ns lh-copy measure georgia">
+                An array of lists is used. The size of the array is equal to the number of vertices. Let the array be an
+                array[]. An entry array[i] represents the list of vertices adjacent to the ith vertex. This
+                representation can also be used to represent a weighted graph. The weights of edges can be represented
+                as lists of pairs. Following is the adjacency list representation of the above graph.
+            </p>
+            <img class="f5 f3-ns lh-copy measure georgia"
+                src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/adjacencylist.png" alt="Graph picture">
+            <h1>Adjacency Matrix</h1>
+            <p class="f5 f3-ns lh-copy measure georgia">
+                Adjacency Matrix is a 2D array of size V x V where V is the number of vertices in a graph. Let the 2D
+                array be adj[][], a slot adj[i][j] = 1 indicates that there is an edge from vertex i to vertex j.
+                Adjacency matrix for undirected graph is always symmetric. Adjacency Matrix is also used to represent
+                weighted graphs. If adj[i][j] = w, then there is an edge from vertex i to vertex j with weight w.
+                The adjacency matrix for the above example graph is:
+            </p>
+            <img class="f5 f3-ns lh-copy measure georgia"
+                src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/adjacencymatrix.png"
+                alt="Graph picture">
+            <br />
+        </div>
+    </article>
+</body>
+
+</html>
